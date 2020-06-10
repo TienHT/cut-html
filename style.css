@@ -1,0 +1,146 @@
+
+.color{
+    display: flex;
+    list-style-type: none;
+    
+    padding: 0px 8px ;
+}
+.color{
+    background-color: #03a9fc;
+}
+.color li .menuitem{
+    display: block;
+    margin: 0;
+    padding: 10px 15px;
+    color:white;
+    text-decoration: none;
+    transition: ease 0.3;
+
+}
+.color li .menuitem:hover{
+    background-color: orange;
+    text-decoration: none;
+}
+.color li .active{
+    background-color: orange;
+    text-decoration: none;
+}
+.header{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding :0px 16px;
+}
+.logo{
+    width: 60px;
+}
+.logo img{
+    width: 100%;
+}
+.mail a:hover{
+    color: rgb(155, 90, 12);
+    text-decoration: none;
+}
+/* content */
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: dotted 1px;
+    outline: none;
+}
+.content{
+    flex-wrap: nowrap !important;
+    display: flex;
+}
+.boldtext{
+    font-weight: bold;
+    font-size: 14px;
+}
+.right{
+   
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 2px 2px 5px #4a4a4a;
+}
+.center{
+    
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #4a4a4a;
+}
+.menu{
+    
+    width: 300px;
+   transition: ease .5s;
+   background-color: aliceblue;
+   height: 400px;
+}
+
+.menu-nav{
+    width: 100%;
+    position: relative;
+    background-color: #03a9fc; 
+    height: 50px;
+}
+.menu-nav button{
+    position: absolute;
+   
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+}
+.menuList li{
+    list-style-type: none;
+    
+}
+.menuList a{
+    color: black;
+    text-decoration: none;
+}
+.menuList li a:hover{
+    text-decoration: none;
+    color: orange;
+}
+.menuScoll{
+    list-style-type: none;
+    white-space: nowrap;
+    padding: 10px;
+    overflow: hidden;
+    
+}
+
+.menuScoll li{
+    list-style-type: none;
+    padding: 10px 0px;
+    
+}
+.menuScoll li a{
+    color: black;
+    text-decoration: none;
+}
+.menuScoll  li ul a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.menuScoll li ul a:hover{
+    color: orange;
+}
+.hidden{
+    max-height: 0px;
+    overflow: hidden;
+    transition: ease .3s;
+    
+}
+.show{
+    max-height: 100rem;
+    display: block;
+    
+}
+.submenu-x{
+    padding: 0;
+}

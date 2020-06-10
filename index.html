@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><a href=""><img src="logo.png" alt=""></a></div>
+        
+        <div class="mail"><i class="fa fa-address-book mr-1" aria-hidden="true"></i><a href="#">admin@gmail.com</a></div>
+    </div>
+    <ul class="color">
+        <li><a href="" class=" menuitem active">Hệ Thống</a></li>
+        <li><a class="menuitem" href="">Kê Khai</a></li>
+        <li><a  class="menuitem" href="">Quản lý sự vụ</a></li>
+        <li><a  class="menuitem" href="">Báo cáo thống kê</a></li>
+        <li><a  class="menuitem" href="">Quản lí biên lai</a></li>
+        <li><a  class="menuitem" href="">Tra Cứu</a></li>
+    </ul>
+
+       <div class=" content">
+           
+        <div class="menu"> 
+            <div class="menu-nav">  
+                <button type="button" id="btn-show" >
+                    <i class="fa fa-angle-double-right fa-lg " id="iconChanged" aria-hidden="true"></i>  
+                </button>
+                   
+                
+            </div>  
+      <ul class="menuScoll">
+          <li> <a href="" class="idopen">
+            <i class="fa fa-bar-chart" style="padding-right: 8px;" aria-hidden="true"></i>
+            
+                 Danh Mục Hệ Thống
+              <i class="fa fa-bell" aria-hidden="true"></i>
+            </a>
+              <ul class="hidden submenu">
+                  <a href=""><li><i class="fa fa-question-circle" aria-hidden="true"></i> Example 1</li></a>
+                  <a href=""><li><i class="fa fa-question-circle" aria-hidden="true"></i> Example 2</li></a>
+              </ul>
+           
+            </li>
+            <li > <a href="" class="idopen">
+                <i class="fa fa-bar-chart" style="padding-right: 8px;" aria-hidden="true"></i>
+                    Quản Lý Người Dùng
+                  <i class="fa fa-bell" aria-hidden="true"></i></a>
+                  <ul class="hidden submenu">
+                     <a href=""> <li><i class="fa fa-book" aria-hidden="true"></i> Danh Sách Nhóm Quyền</li></a>
+                     <a href=""> <li><i class="fa fa-database" aria-hidden="true"></i> Danh Sách Người Dùng</li></a>
+                  </ul>
+                </li>
+    
+      </ul>
+        </div>
+        <div class="center col-4 mr-2">
+            <h3>Danh Mục Dạng Lưới</h3><hr>
+            <div class="row">
+                <div class="col-3 boldtext">Tìm Kiếm:</div>
+                <div class="col-6"><input type="text"></div>
+                <div class="col-3"><input type="button" class="btn btn-primary" value="Tìm Kiếm"></div>
+            </div>
+            <ul class="menuList">
+                <li> <i class="fa fa-folder" aria-hidden="true"></i> <a href="">00-Tổng Công Ty</a> 
+                    <ul>
+                        <li>
+                            <i class="fa fa-folder" aria-hidden="true"></i> <a href="">10-Bưu Điện TP Hà nội</a>  
+                            <ul>
+                                <li>
+                                    <i class="fa fa-folder" aria-hidden="true"></i><a href="">1155-Bưu Điện Trung TÂm 6</a>   
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-folder" aria-hidden="true"></i><a href="">127060 - KHL Hoàng Mai</a> 
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </li>
+            </ul>
+        </div>
+        <div class="  border right flex-fill">
+            <h3>THÔNG TIN CHI TIẾT</h3><hr>
+            <div class="row">
+                <div class="col-2 boldtext">Mã:</div>
+                <div class="col-4"><input type="text" placeholder="127000"></div>
+                <div class="col-2 boldtext">Tên:</div>
+                <div class="col-4"><input type="text" placeholder="KCH hoàng mai"></div>
+            </div>
+            <div class="row ">
+                <div class="col-2 boldtext">Địa Chỉ:</div>
+                <div class="col-3"><input type="text" placeholder="phường Giáp bát"></div>
+                <div class="col-3"><input type="text" placeholder="Quận Hoàng Mai"></div>
+                <div class="col-4"><input type="text" placeholder="Thành Phố Hà nội"></div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-10"><input type="text" name="" id="" placeholder="số 811,đường giải phóng,Phường giáp bát"></div>
+            </div>
+            <div class="row">
+                <div class="col-2 boldtext">Số Điện Thoại</div>
+                <div class="col-4"><input type="text" placeholder="KT12"></div>
+                <div class="col-2 boldtext">Số Fax:</div>
+                <div class="col-4"><input type="text" name="" id="" placeholder="Điện Tử"></div>
+            </div>
+            <div class="row">
+                <div class="col-2 boldtext">Loại BC:</div>
+                <div class="col-4"><input type="text" name="" id=""></div>
+                <div class="col-2 boldtext">Phương Tiện</div>
+                <div class="col-4"><input type="text"></div>
+            
+            </div>
+            <div class="row">
+                <div class="col-2 boldtext">Cơ Quan BHXH</div>
+                <div class="col-10"><input type="text" name="" id=""></div>
+            </div>
+        </div>
+            </div>
+       <script>
+            document.addEventListener('DOMContentLoaded',()=>{
+            let opened = true
+            const itemMenu = document.getElementsByClassName('menu')[0]
+            const button = document.querySelector('#btn-show');
+            const iconChanged = document.querySelector('#iconChanged')
+            const subMenu = document.querySelectorAll('.submenu')
+ 
+            button.addEventListener('click',onShowMenu)
+            function onShowMenu(){
+                if(opened){ 
+                    itemMenu.style.width = '40px'
+                    iconChanged.classList.remove('fa-angle-double-right')
+                    iconChanged.classList.add('fa-angle-double-left')
+                    // subMenu.classList.add('submenu-x')
+                    for(let i = 0;i< subMenu.length;i++){
+                        subMenu[i].classList.add('submenu-x')
+                    }
+                    opened = false
+                    return
+                }
+                itemMenu.style.width = '300px'
+                for(let i = 0;i< subMenu.length;i++){
+                        subMenu[i].classList.remove('submenu-x')
+                    }
+                
+                iconChanged.classList.remove('fa-angle-double-left')
+                iconChanged.classList.add('fa-angle-double-right')
+                opened = true
+                
+            }
+            })
+            document.addEventListener('DOMContentLoaded',()=>{
+                let scroll = true
+                const itemScroll = document.getElementsByClassName('idopen')
+                const itemHidden = document.getElementsByClassName('hidden')
+               
+                for(let i =0 ;i<=itemScroll.length;i++){
+                    itemScroll[i].addEventListener('click',onScrollMenu)
+                    function onScrollMenu(e){
+                    e.preventDefault()
+                    itemHidden[i].classList.toggle('show')
+                }
+                }
+
+            })
+       </script>
+       
+    
+     
+</body>
+</html>
